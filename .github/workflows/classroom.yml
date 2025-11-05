@@ -19,6 +19,7 @@ jobs:
       with:
         timeout: 10
         setup-command: pip install pytest
+        test-command: pytest tests/test_task1.py -v
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
